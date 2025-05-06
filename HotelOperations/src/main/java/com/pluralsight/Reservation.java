@@ -42,7 +42,7 @@ public class Reservation {
         } else if (roomType.equalsIgnoreCase("Double")) {
             basePrice = 124.00;
         } else {
-            throw new IllegalArgumentException("Invalid option. Please select 'King' or 'Double'");
+            throw new IllegalArgumentException("Invalid option. Please select either 'King' or 'Double'");
         }
         if (isWeekend) {
             basePrice *= 1.10;
